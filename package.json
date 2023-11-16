@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Capstone Project cpi-fs-sdg-3-wellnest",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "nodemon -r dotenv/config server.js dotenv_config_path=./.env.production",
+    "dev": "nodemon -r dotenv/config server.js dotenv_config_path=./.env.development"
+  },
+  "author": "Rifki Ramadhan",
+  "license": "MIT",
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.40.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "mongoose-unique-validator": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^3.0.1",
+    "sharp": "^0.32.6"
+  }
+}
