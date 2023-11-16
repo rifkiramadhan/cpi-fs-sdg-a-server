@@ -18,12 +18,7 @@ dbConnect();
 app.use(express.json());
 
 // Cors
-app.use(
-	cors({
-		origin: 'http://localhost:3000',
-		credentials: true,
-	})
-);
+app.use(cors());
 
 // Users Route
 app.use('/api/users', usersRoutes);
