@@ -18,7 +18,12 @@ dbConnect();
 app.use(express.json());
 
 // Cors
-app.use(cors());
+app.use(
+  cors({
+		origin: 'https://cpi-fs-sdg-a-client.vercel.app',
+		credentials: true,
+	})
+);
 
 // Users Route
 app.use('/api/users', usersRoutes);
